@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💻 Fábio Coral | Terminal Portfolio
 
-## Getting Started
+> **System Status: ONLINE** 🟢
+>
+> Bem-vindo ao meu portefólio interativo. Este projeto foi arquitetado não apenas para exibir os meus trabalhos, mas para servir como uma demonstração viva das minhas competências em engenharia de software, otimização de performance e design de interfaces modernas.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ⚡ Sobre o Projeto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Um portefólio interativo construído com foco na performance e na experiência do utilizador (UX). O site combina animações de alta fluidez com uma arquitetura modular e escalável.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Tecnologias Utilizadas
 
-## Learn More
+O ecossistema baseia-se nas tecnologias mais modernas da web:
 
-To learn more about Next.js, take a look at the following resources:
+* **[Next.js (App Router)](https://nextjs.org/)** - Framework React para renderização e estrutura de rotas.
+* **[React 18](https://react.dev/)** - Biblioteca base para a construção da interface e gestão de estados.
+* **[TypeScript](https://www.typescriptlang.org/)** - Tipagem estática para um código robusto e livre de erros.
+* **[Tailwind CSS](https://tailwindcss.com/)** - Estilização utilitária para o design responsivo e efeitos visuais complexos.
+* **[GSAP (GreenSock)](https://gsap.com/) & ScrollTrigger** - Motor de animações premium para revelar elementos com base no scroll da página.
+* **[Web3Forms API](https://web3forms.com/)** - Arquitetura *Serverless* para o envio e validação de e-mails diretamente do formulário de contacto.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Funcionalidades Principais
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* **Animações de Alta Performance:** Utilização do `useLayoutEffect` e do contexto do GSAP para renderizar animações sincronizadas sem comprometer a taxa de atualização do navegador.
+* **Sistema de Execução Interativa (Play Mode):** Capacidade de testar e jogar projetos diretamente na página através de instâncias isoladas (`iframes`).
+* **Carrossel com Gestos (Drag & Snap):** Navegação fluida entre os cartões de projeto através do rato ou toque.
+* **Formulário de Contacto "Serverless":** Sistema de envio de mensagens integrado e assíncrono, com proteção antispam e *feedback* visual em tempo real.
+* **Design 100% Responsivo:** Layout fluido que se adapta a telemóveis, tablets e monitores *ultrawide*.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Instalação e Execução Local
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Se desejar analisar o código-fonte em execução na sua própria máquina, siga os passos abaixo:
+
+### Pré-requisitos
+* [Node.js](https://nodejs.org/) instalado (v18 ou superior).
+* Git instalado.
+
+### Passos
+1. Clone este repositório:
+   ```bash
+   git clone [https://github.com/FabioCoral/meu-portfolio.git](https://github.com/FabioCoral/meu-portfolio.git)
