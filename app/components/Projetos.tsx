@@ -63,7 +63,7 @@ export function Projetos(){
             titulo: "Meu Site",
             descricao: "Portfólio interativo. Desenvolvido com arquitetura modular e integração de formulário.",
             tecnologias: ["Next.js", "React", "TypeScript", "Tailwind", "GSAP", "Web3Form API"],
-            repo:  "https://github.com/FabioCoral/MeuSite#",
+            repo:  "https://github.com/FabioCoral/MeuSite.git",
             imagem: "/meusite.png",
         },
 
