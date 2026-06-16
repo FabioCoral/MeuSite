@@ -48,7 +48,6 @@ export function Projetos(){
             tecnologias: ["Flutter", "Dart", "FireBase"],
             repo:  "https://github.com/FabioCoral/App_Vibracao",
             imagem: "/appvibracao.png",
-            playUrl: ""
         },
         {
             id: "02",
@@ -57,7 +56,6 @@ export function Projetos(){
             tecnologias: ["Node.js"],
             repo:  "https://github.com/FabioCoral/API-App-Vibra-o",
             imagem: "/api.png",
-            playUrl: ""
         },
 
         {
@@ -65,9 +63,8 @@ export function Projetos(){
             titulo: "Meu Site",
             descricao: "Portfólio interativo. Desenvolvido com arquitetura modular e integração de formulário.",
             tecnologias: ["Next.js", "React", "TypeScript", "Tailwind", "GSAP", "Web3Form API"],
-            repo:  "https://github.com/FabioCoral/FlappyBird",
+            repo:  "https://github.com/FabioCoral/MeuSite#",
             imagem: "/meusite.png",
-            playUrl: "https://flappybird.io/"
         },
 
         {
@@ -77,7 +74,6 @@ export function Projetos(){
             tecnologias: ["Java"],
             repo:  "https://github.com/FabioCoral/chess-system-java",
             imagem: "/newchess.png",
-            playUrl: ""
         },
         {
             id: "05",
@@ -86,7 +82,6 @@ export function Projetos(){
             tecnologias: ["JavaScript", "HTML5", "CSS3"],
             repo:  "https://github.com/FabioCoral/FlappyBird",
             imagem: "/birdflap.png",
-            playUrl: "https://flappybird.io/"
         },
 
     ];
@@ -198,56 +193,12 @@ export function Projetos(){
                                     <a href={project.repo} target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2">
                                         {'</>'} Repositório
                                     </a>
-
-                                    {project.playUrl && (
-                                        <button
-                                            onClick={() => setActiveGameUrl(project.playUrl)}
-                                            className="px-3 py-1.5 bg-fuchsia-400/10 text-fuchsia-400 border border-fuchsia-400/30 hover:bg-fuchsia-400 hover:text-[#0a0a0f] transition-colors rounded-sm flex items-center gap-2"
-                                        >
-                                            ▶ Run_Game
-                                        </button>
-                                    )}
                                 </div>
                             </div>
                         </div>
                     ))}
                 </div>
             </section>
-
-
-            {activeGameUrl && (
-                <div className="fixed inset-0 z-[100] flex items-center justify-center bg-[#0a0a0f]/90 backdrop-blur-sm p-4 animate-in fade-in duration-300">
-                    <div className="bg-[#12121a] border border-zinc-800 rounded-xl w-full max-w-5xl h-[85vh] flex flex-col overflow-hidden shadow-2xl shadow-fuchsia-500/10">
-
-                        <div className="flex justify-between items-center px-4 py-3 border-b border-zinc-800 bg-zinc-900/50">
-                            <div className="flex items-center gap-3">
-                                <div className="flex gap-1.5">
-                                    <div className="w-3 h-3 rounded-full bg-zinc-700"></div>
-                                    <div className="w-3 h-3 rounded-full bg-zinc-700"></div>
-                                    <div className="w-3 h-3 rounded-full bg-zinc-700"></div>
-                                </div>
-                                <span className="font-mono text-cyan-400 text-xs tracking-widest uppercase">System.Execute(Interactive_Mode)</span>
-                            </div>
-
-                            <button
-                                onClick={() => setActiveGameUrl(null)}
-                                className="text-zinc-500 hover:text-rose-400 font-mono text-sm transition-colors"
-                            >
-                                [X] Terminate
-                            </button>
-                        </div>
-
-                        <div className="flex-1 bg-black relative">
-                            <iframe
-                                src={activeGameUrl}
-                                className="w-full h-full border-none"
-                                title="Interactive Project Window"
-                                allow="fullscreen"
-                            />
-                        </div>
-                    </div>
-                </div>
-            )}
         </>
     )
 }
